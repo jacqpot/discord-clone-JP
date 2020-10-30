@@ -7,7 +7,10 @@ import SidebarChannel from "./SidebarChannel";
 import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import CallIcon from "@material-ui/icons/Call";
-
+import { Avatar } from "@material-ui/core";
+import MicIcon from "@material-ui/icons/Mic";
+import HeadsetIcon from "@material-ui/icons/Headset";
+import SettingsIcon from "@material-ui/icons/Settings";
 function SideBar() {
   return (
     <div className="sidebar">
@@ -42,6 +45,18 @@ function SideBar() {
         <div className="sidebar__voiceIcons">
           <InfoOutlinedIcon />
           <CallIcon />
+        </div>
+      </div>
+      <div className="sidebar__profile">
+        <Avatar src="./public/jp-winter-headshots.jpg" />
+        <div className="sidebar__profileInfo">
+          <h3>Jacques Potgieter</h3>
+          <p>#thisIsMyId</p>
+        </div>
+        <div className="sidebar__profileIcons">
+          <MicIcon />
+          <HeadsetIcon />
+          <SettingsIcon />
         </div>
       </div>
     </div>
